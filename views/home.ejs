@@ -1,0 +1,42 @@
+<!-- include header -->
+<%- include('include/_header') %>
+  <!-- /include header -->
+
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+
+      <div class="box-nav d-flex justify-between">
+        <a href="/add-todo" class="border-shadow">
+          <span class="text-gradient">Add Todo <i class="fas fa-todo"></i></span>
+        </a>
+        <a href="/logout" class="btn btn-danger">Logout</a>
+      </div>
+
+      <!-- form handling -->
+      <form action="/" method="POST">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%- include('include/_show') %>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </main>
+  <!-- /Main Site -->
+
+
+  <!-- include footer -->
+  <%- include('include/_footer') %>
+    <!-- /include footer -->

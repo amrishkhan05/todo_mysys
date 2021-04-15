@@ -1,0 +1,37 @@
+ <!-- form handling -->
+ <form action="/api/todo" method="POST" id="add_todo">
+    <div class="new_todo">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Mark Stoenis">
+        </div>
+        <div class="form-group">
+            <label for="description" class="text-light">Description</label>
+            <input type="text" name="description" value="" placeholder="description">
+        </div>
+        <div class="form-group">
+            <label for="date" class="text-light">Date</label>
+            <div class="radio inline">
+                <input type="date" id="radio-2" name="date" value="2017-06-01" >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="status" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="status" value="Active" >
+                <label for="radio-4" class="radio-label">Active</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="status" value="Inactive" >
+                <label for="radio-5" class="radio-label">Inactive</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
